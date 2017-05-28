@@ -1,1 +1,2 @@
  practice text
+New line added to master file

@@ -1,4 +1,4 @@
 Adding Text To GitTest file
 Adding one more line to this file
 
-New commits to master
+New Entry

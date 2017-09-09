@@ -1,13 +1,2 @@
-Adding Text To GitTest file
-Adding one more line to this file
-
-
-
-Added new line to Branch Dev
-
-New Entry
-
-Idiot
-
-adding a line
+I am adding new lines to this file
 

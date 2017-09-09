@@ -1,4 +1,4 @@
 I am adding new lines to this file
 
 This is line should be merged to master file
-
+Last line in to merge

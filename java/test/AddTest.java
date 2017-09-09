@@ -9,5 +9,6 @@ public class AddTest {
 		int j =3;
 		Assert.assertEquals(i+j, 4);
 		System.out.println("Hello");
+		System.out.println("Hi");
 	}
 }

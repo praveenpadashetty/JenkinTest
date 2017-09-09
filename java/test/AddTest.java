@@ -11,5 +11,7 @@ public class AddTest {
 
 		System.out.println("Hello");
 		System.out.println("Hi");
+		System.out.println("Tested");
+		
 	}
 }

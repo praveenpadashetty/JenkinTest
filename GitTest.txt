@@ -11,3 +11,5 @@ Idiot
 
 adding a line
 
+This is line should be merged to master file
+

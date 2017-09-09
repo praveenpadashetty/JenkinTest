@@ -8,5 +8,6 @@ public class AddTest {
 		int i = 1;
 		int j =3;
 		Assert.assertEquals(i+j, 4);
+		System.out.println("Hi");
 	}
 }

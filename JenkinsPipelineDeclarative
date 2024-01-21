@@ -22,11 +22,12 @@ stages{
              archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
 	}
         }
+}
 	post {
 		always {
 			echo 'Pipeline finished'
 			step([$class: 'JUnitResultArchiver',testResults: '*target/surfire-reports/*.xml'])
 		}
 	}
-}
+
 }

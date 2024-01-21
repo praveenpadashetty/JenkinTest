@@ -24,10 +24,9 @@ stages{
         }
 }
 	post {
-		always {
-			echo 'Pipeline finished'
-			step([$class: 'JUnitResultArchiver',testResults: '**target/surfire-reports/*.xml'])
-		}
+		always {	echo 'Pipeline finished'
+     				 junit(allowEmptyResults: true,  testResults: '**/test-reports/*.xml' )
+		
 	}
 
 }

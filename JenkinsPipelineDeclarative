@@ -11,12 +11,22 @@ stages{
          stage('build'){
 	steps{
              echo 'I am in built'
+		script{
+			env.Path="C:/workspace/softwares/apache-maven-3.9.6-bin/apache-maven-3.9.6/bin;c:\\windows\\System32"
+		}
+		bat 'mvn package'
 	}
         }
          stage('archive'){
 	steps{
-             echo 'I am archived'
+             archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
 	}
         }
+	post {
+		always {
+			echo 'Pipeline finished'
+			step([$class: 'JUnitResultArchiver',testResults: '*target/surfire-reports/*.xml'])
+		}
+	}
 }
 }

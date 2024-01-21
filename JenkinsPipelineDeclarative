@@ -1,0 +1,21 @@
+pipeline{
+stages{
+        stage('checkout'){
+	    steps{
+            git 'https://github.com/praveenpadashetty/JenkinTest.git'
+	}
+             
+        }
+         env.Path="C:/workspace/softwares/apache-maven-3.9.6-bin/apache-maven-3.9.6/bin;c:\\windows\\System32"
+         stage('build'){
+	steps{
+             bat 'mvn package'
+	}
+        }
+         stage('archive'){
+	steps{
+             archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+	}
+        }
+}
+}

@@ -26,7 +26,7 @@ stages{
 	post {
 		always {
 			echo 'Pipeline finished'
-			step([$class: 'JUnitResultArchiver',testResults: '*target/surfire-reports/*.xml'])
+			step([$class: 'JUnitResultArchiver',testResults: '**target/surfire-reports/*.xml'])
 		}
 	}
 

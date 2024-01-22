@@ -11,6 +11,7 @@ pipeline {
       steps {
         echo 'building'
         bat 'mvn package'
+        sh 'env.Path="C:/workspace/softwares/apache-maven-3.9.6-bin/apache-maven-3.9.6/bin;c:\\\\windows\\\\System32"'
       }
     }
 
